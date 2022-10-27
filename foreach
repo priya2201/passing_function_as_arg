@@ -1,0 +1,6 @@
+function saySquared(n) {
+  console.log(`${n} squared is ${n*n}.`)
+}
+
+const arr = [1,2,3,4]
+arr.forEach(saySquared)

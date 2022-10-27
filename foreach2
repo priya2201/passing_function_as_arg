@@ -1,0 +1,8 @@
+function sayIndexAndValue(value, index) {
+  console.log(`Index ${index} contains: ${value}.`)
+}
+
+const arr = ["cat", 5, "boo", { cheese: 'Cheddar'}, [{
+    name:'pia',age:21},{name:'vini',age:22}],
+        12]
+arr.forEach(sayIndexAndValue)

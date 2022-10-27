@@ -1,0 +1,25 @@
+// function sayboo(){
+//     console.log("Hiee");
+//     return function(){
+//         console.log("hello")
+//     }
+
+// }
+// setTimeout(sayboo,2000);
+// setTimeout(sayboo(),2000)
+
+// function sayBoo() {
+//     console.log('Boo!')
+//     return function() {
+//       console.log('Argh!')
+//     }
+//   }
+
+//   setTimeout(sayBoo(), 3000)
+var n = 10;
+function countdown(n) {
+    if (n === 0) return;
+    console.log(`${n}!`)
+    setTimeout(()=> countdown(--n), 1000)
+}
+countdown(n);
